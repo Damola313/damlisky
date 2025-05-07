@@ -11,24 +11,24 @@ This project demonstrates how to use Git to manage and track changes in a simple
 - Git installed on your machine
 - Basic knowledge of Git commands
 - A GitHub account with an existing repository
-- Project files: `form.html` and `style.css`
+- Project files: form.html and style.css
 
 ---
 
 ## 📂 File Breakdown
 
-### 1. `form.html`
+### 1. form.html
 
 This HTML file creates the structure of a contact form.
 
 #### Key Elements:
-- **Text Input for Name**
-- **Email Input Field**
-- **Phone Number Field**
-- **Textarea for Message**
-- **Submit Button**
+- *Text Input for Name*
+- *Email Input Field*
+- *Phone Number Field*
+- *Textarea for Message*
+- *Submit Button*
 
-```html
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,21 +57,21 @@ This HTML file creates the structure of a contact form.
     </div>
 </body>
 </html>
-```
+
 
 ---
 
-### 2. `style.css`
+### 2. style.css
 
 This CSS file styles the contact form for better visual presentation.
 
 #### Key Styling:
-- **Centered form layout**
-- **Rounded inputs and button**
-- **Light background and shadow effect**
-- **Hover effect on the button**
+- *Centered form layout*
+- *Rounded inputs and button*
+- *Light background and shadow effect*
+- *Hover effect on the button*
 
-```css
+css
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -124,54 +124,57 @@ form button {
 form button:hover {
     background-color: #005fa3;
 }
-```
 
----
+
+## Contact Form Preview Screenshot
+![alt text](<Screenshot 2025-05-07 213047.png>)
+
+
 
 ## 🧪 Git Workflow Summary
 
-1. **Clone the Repository**
-    ```bash
+1. *Clone the Repository*
+    bash
     git clone https://github.com/yourusername/simple-form.git
     cd simple-form
-    ```
+    
 
-2. **Add and Commit Initial Files**
-    ```bash
+2. *Add and Commit Initial Files*
+    bash
     git add form.html style.css
     git commit -m "Initial commit with form and styles"
     git push origin main
-    ```
+    
 
-3. **Make and Commit Changes**
+3. *Make and Commit Changes*
     - Add new fields or styling
-    ```bash
+    bash
     git add .
     git commit -m "Updated form layout and styles"
     git push origin main
-    ```
+    
 
-4. **Create a Feature Branch**
-    ```bash
+4. *Create a Feature Branch*
+    bash
     git checkout -b feature-add-captcha
-    ```
+    
 
-5. **Merge Feature Branch**
-    ```bash
+5. *Merge Feature Branch*
+    bash
     git checkout main
     git merge feature-add-captcha
     git push origin main
-    ```
+    
 
-6. **Undo Local Changes**
-    ```bash
+6. *Undo Local Changes*
+    bash
     git checkout -- style.css
-    ```
+    
 
-7. **Revert to a Previous Version**
-    ```bash
+7. *Revert to a Previous Version*
+    bash
     git checkout <commit-hash> -- form.html
-    ```
+    
 
 ---
 
@@ -195,6 +198,6 @@ After completing this project, you will have practiced:
 
 ## 👤 Author
 
-**Ariyo Damola David**  
+*Ariyo Damola David*  
 Critical Thinking Hands-on Lab  
 May 2025
